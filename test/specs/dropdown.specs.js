@@ -29,6 +29,8 @@ describe('Existence heading and check 1', () => {
         
         
         await dropdownpage.selection("Option 2")
+        console.log('a')
+        console.log(expect(dropdownpage.option2).toBeSelected())
         await expect(dropdownpage.option2).toBeSelected()
         
       /**  await expect(SecurePage.flashAlert).toHaveTextContaining(
